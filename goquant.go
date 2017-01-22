@@ -12,9 +12,9 @@ import (
 )
 
 func Quantize(img_buff *[]byte) {
-	log.Println("Come into quantize")
 	in_image_size := len(*img_buff)
 	out_image_size := C.size_t(0)
+
 	log.Println("IN Image size: ", in_image_size)
 	b := *img_buff
 

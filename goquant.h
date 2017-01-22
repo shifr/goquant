@@ -46,7 +46,7 @@ static pngquant_error prepare_output_image(liq_result *result, liq_image *input_
 char *custom_create(void *file_cont, int sz, size_t *out_length) {
     liq_image *input_image = NULL;
     liq_result *res = NULL;
-    int rezult;
+    int result;
 
     png24_image input_image_rw = {};
     png24_image *input_image_rwpng = &input_image_rw;
@@ -74,15 +74,15 @@ char *custom_create(void *file_cont, int sz, size_t *out_length) {
 
     dynamic_buf* out_image_buf = create_image_buf_len(sz);
 
-    rezult = rwpng_write_image8_to_buf(out_image_buf, &output_image);
+    result = rwpng_write_image8_to_buf(out_image_buf, &output_image);
 
-    if (rezult != SUCCESS)
+    if (result != SUCCESS)
     {
-        fprintf(stderr, "Error occured while writing to file : %d", rezult);
+        fprintf(stderr, "Error occured while writing to file : %d", result);
         exit(EXIT_FAILURE);
     }
 
     *out_length = out_image_buf->length;
+
     return out_image_buf->buffer;
 }
-
