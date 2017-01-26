@@ -1,9 +1,10 @@
 package goquant
 
 /*
+#cgo linux CFLAGS: -std=c99
 #cgo CFLAGS: -I ${SRCDIR}/src
 #cgo CFLAGS: -I ${SRCDIR}/src/lib
-#cgo LDFLAGS: -L /usr/local/lib -limagequant -lrwpng
+#cgo LDFLAGS: -L /usr/local/lib -limagequant -lrwpng -lm
 #include "goquant.h"
 */
 import "C"
