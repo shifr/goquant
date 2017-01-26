@@ -1,6 +1,9 @@
 # goquant
 Golang wrapper for libimagequant
 
+#INSTALLATION#
+
+###Debian based###
 1. Install Go as described [here][go-install]
 2. Install [Git][git]
 3. Set GOPATH (example: `export GOPATH=~/Projects/Go`) to directory where all your packages will be located
