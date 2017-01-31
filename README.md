@@ -1,6 +1,8 @@
 # goquant
 Golang wrapper for libimagequant
 
+###Not ready for using yet!###
+
 #INSTALLATION#
 
 ###Debian based###
